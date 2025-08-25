@@ -145,7 +145,7 @@ def main():
     ball_size: Vec2 = Vec2(40, 40)
     player_size: Vec2 = Vec2(25, 100)
 
-    ball: Ball = Ball(pos=W_CENTRE - (ball_size * Vec2(0.5, 0.5)), size=ball_size, speed=Vec2(-7, 4), colour=WHITE, surface=surface)
+    ball: Ball = Ball(W_CENTRE - (ball_size * Vec2(0.5, 0.5)), ball_size, Vec2(-7, 4), WHITE, surface)
     p1: Player = Player(1, Vec2(50, W_HEIGHT/2 - player_size.y/2), player_size, Vec2(0, 8), WHITE, surface)
     p2: Player = Player(2, Vec2(W_WIDTH - 50 - player_size.x, W_HEIGHT/2 - player_size.y/2), player_size, Vec2(0, 8), WHITE, surface)
 
